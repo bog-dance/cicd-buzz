@@ -6,4 +6,5 @@ after_success:
           - sh .travis/deploy_dockerhub.sh
 
 after_success:
-  - sh .travis/deploy_dockerhub.sh
+  - sh .travis/deploy_dockerhub.s
+  - test “$TRAVIS_BRANCH” = “master” && sh .travis/deploy_heroku.shh
