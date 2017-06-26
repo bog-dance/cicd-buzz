@@ -8,3 +8,4 @@ after_success:
 after_success:
   - sh .travis/deploy_dockerhub.s
   - test “$TRAVIS_BRANCH” = “master” && sh .travis/deploy_heroku.shh
+
