@@ -20,5 +20,6 @@ def generate_buzz():
     return phrase.title()
 
 if __name__ == "__main__":
+    print 'second edition!'
     print generate_buzz()
 
